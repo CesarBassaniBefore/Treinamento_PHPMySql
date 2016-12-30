@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="loja@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="loja">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="mysql"/>
+    <schema id="5" parent="1" name="performance_schema"/>
+    <schema id="6" parent="1" name="sun"/>
+    <schema id="7" parent="1" name="sun_formulario"/>
+    <schema id="8" parent="1" name="sun_pdr_ac"/>
+    <schema id="9" parent="1" name="sun_pdr_al"/>
+    <schema id="10" parent="1" name="sun_pdr_am"/>
+    <schema id="11" parent="1" name="sun_pdr_ap"/>
+    <schema id="12" parent="1" name="sun_pdr_ba"/>
+    <schema id="13" parent="1" name="sun_pdr_ce"/>
+    <schema id="14" parent="1" name="sun_pdr_df"/>
+    <schema id="15" parent="1" name="sun_pdr_es"/>
+    <schema id="16" parent="1" name="sun_pdr_go"/>
+    <schema id="17" parent="1" name="sun_pdr_ma"/>
+    <schema id="18" parent="1" name="sun_pdr_mg"/>
+    <schema id="19" parent="1" name="sun_pdr_ms"/>
+    <schema id="20" parent="1" name="sun_pdr_mt"/>
+    <schema id="21" parent="1" name="sun_pdr_pa"/>
+    <schema id="22" parent="1" name="sun_pdr_pb"/>
+    <schema id="23" parent="1" name="sun_pdr_pe"/>
+    <schema id="24" parent="1" name="sun_pdr_pi"/>
+    <schema id="25" parent="1" name="sun_pdr_pr"/>
+    <schema id="26" parent="1" name="sun_pdr_rj"/>
+    <schema id="27" parent="1" name="sun_pdr_rn"/>
+    <schema id="28" parent="1" name="sun_pdr_ro"/>
+    <schema id="29" parent="1" name="sun_pdr_rr"/>
+    <schema id="30" parent="1" name="sun_pdr_rs"/>
+    <schema id="31" parent="1" name="sun_pdr_sc"/>
+    <schema id="32" parent="1" name="sun_pdr_se"/>
+    <schema id="33" parent="1" name="sun_pdr_sp"/>
+    <schema id="34" parent="1" name="sun_pdr_to"/>
+    <schema id="35" parent="1" name="sun_relatorios"/>
+    <schema id="36" parent="1" name="sun_varejo_ac"/>
+    <schema id="37" parent="1" name="sun_varejo_al"/>
+    <schema id="38" parent="1" name="sun_varejo_am"/>
+    <schema id="39" parent="1" name="sun_varejo_ap"/>
+    <schema id="40" parent="1" name="sun_varejo_ba"/>
+    <schema id="41" parent="1" name="sun_varejo_ce"/>
+    <schema id="42" parent="1" name="sun_varejo_df"/>
+    <schema id="43" parent="1" name="sun_varejo_es"/>
+    <schema id="44" parent="1" name="sun_varejo_go"/>
+    <schema id="45" parent="1" name="sun_varejo_ma"/>
+    <schema id="46" parent="1" name="sun_varejo_mg"/>
+    <schema id="47" parent="1" name="sun_varejo_ms"/>
+    <schema id="48" parent="1" name="sun_varejo_mt"/>
+    <schema id="49" parent="1" name="sun_varejo_pa"/>
+    <schema id="50" parent="1" name="sun_varejo_pb"/>
+    <schema id="51" parent="1" name="sun_varejo_pe"/>
+    <schema id="52" parent="1" name="sun_varejo_pi"/>
+    <schema id="53" parent="1" name="sun_varejo_pr"/>
+    <schema id="54" parent="1" name="sun_varejo_rj"/>
+    <schema id="55" parent="1" name="sun_varejo_rn"/>
+    <schema id="56" parent="1" name="sun_varejo_ro"/>
+    <schema id="57" parent="1" name="sun_varejo_rr"/>
+    <schema id="58" parent="1" name="sun_varejo_rs"/>
+    <schema id="59" parent="1" name="sun_varejo_sc"/>
+    <schema id="60" parent="1" name="sun_varejo_se"/>
+    <schema id="61" parent="1" name="sun_varejo_sp"/>
+    <schema id="62" parent="1" name="sun_varejo_to"/>
+    <schema id="63" parent="1" name="sys"/>
+    <table id="64" parent="2" name="categorias"/>
+    <table id="65" parent="2" name="produtos"/>
+    <column id="66" parent="64" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="67" parent="64" name="nome">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="68" parent="64" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="69" parent="65" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="70" parent="65" name="nome">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="71" parent="65" name="preco">
+      <Position>3</Position>
+      <DataType>decimal(10,2)|0</DataType>
+    </column>
+    <column id="72" parent="65" name="descricao">
+      <Position>4</Position>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="73" parent="65" name="categoria_id">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="74" parent="65" name="usado">
+      <Position>6</Position>
+      <DataType>tinyint(1)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <key id="75" parent="65" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
